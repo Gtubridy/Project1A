@@ -53,6 +53,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(denver));
         LatLng san_diego = new LatLng(32, 243);
         mMap.addMarker(new MarkerOptions().position(san_diego).title("Marker in San Diego"));
+        LatLng pikes_peak = new LatLng(38.8409, -105.0423);
+        mMap.addMarker(new MarkerOptions().position(pikes_peak).title("Marker in Pikes Peak"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(san_diego));
     }
 }
